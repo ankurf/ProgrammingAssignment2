@@ -19,9 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
          setinverse = setinverse,
          getinverse = getinverse)
 }
-The following function calculates the mean of the special "vector" created with the above function. However, it first checks to see if the mean has already been calculated. If so, it gets the mean from the cache and skips the computation. Otherwise, it calculates the mean of the data and sets the value of the mean in the cache via the setmean function.
 
-#This function cacheSolve computes the inverse of the special “matrix” returned by makeCacheMatrix function. 
+#This function cacheSolve calculates the inverse of the special “matrix” created by makeCacheMatrix function. 
 #If the inverse has been calculated, then the cacheSolve will retrieve the inverse from the above function 
 #otherwise it gets the matrix stored and calculates the inverse, and x$setinverse(m) stores it in the 
 #object m in makeCacheMatrix.
